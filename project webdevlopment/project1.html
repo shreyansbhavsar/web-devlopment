@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/s1.css">
+<style>
+    /* css reset  */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: url('image/kajukatri.JPG');  
+        color: cornsilk;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        left: 60px;
+        /* border: 2px solid blue; */
+    }
+    .mid{
+        display:block;
+        width: 33%;
+        margin: 20px auto;
+        /* border: 2px solid blue; */
+    }
+    .left img{
+        width: 100px;
+        margin: auto;
+        /* filter: invert(); if the image is  black so the image colour will be invert  */
+    }
+    .left div{
+        text-align: center;
+        font-size: 26px;
+        line-height: 19px;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid blue; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    .btn{
+        font-family:Baloo+Thambi+2;
+        margin: 9px;
+        background-color:white;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: darkgrey;
+    }
+    .container{
+        float: right;
+        border: 2px solid white;
+        in: 80px 106pmargx;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        font-family:Baloo+Thambi+2;
+        text-align:  center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border:2px solid black ;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }  
+    .container button{
+        width: 508px;
+        padding: 1px;
+        border:2px solid black ;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container button:hover{
+        background-color: darkgray;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/logo.jpeg" alt="">
+            <div>SUKHDIA GARBADDAS BAPUJI</div>
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+            <button class="btn">Whatsaap Now</button>
+        </div> 
+    </header>
+    <div class="container">
+        <h1>Welcome To The Best Test Of Gujrat</h1>
+        <h2>Coustmer Detail</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter our Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone-no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Emailid">
+            </div>
+            <button class="btn">submit</button>
+        </form>    
+    </div>
+</body>
+</html>

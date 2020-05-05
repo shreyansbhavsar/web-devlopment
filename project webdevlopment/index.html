@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGB Online Food Delivery Service in Nadiad</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+        /* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+/*NAVIGATION BAR:- LOGO AND IMAGE  */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+/*  Navigation barLIST STYLING */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    margin: ;
+    padding: ;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar::before{
+    content: " ";
+    background-color: rgb(68, 68, 230);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+#navbar ul li{
+     color: white; 
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 20px;
+}
+/* Home section  */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#Home::before{
+    content: " ";
+    background:url('hanybite.JPG') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+#Home h1{
+    color: blue;
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+    
+}
+#Home p{
+    color:blue;
+    font-size: 1.2rem;
+}
+/* product  */
+#pro{
+    margin: 34px;
+    display: flex;
+}
+#pro.box{
+    border: 2px solid darkred;
+    height: 160px;
+}
+#pro.box img{  
+    
+}
+  
+}
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: blue;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: lightblue;
+}
+.center{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpeg" alt="SGB">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Products</a></li>
+            <li class="item"><a href="#">Pricelist</a></li>
+            <li class="item"><a href="#">About US</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="Home">
+        <h1 class="h-primary">Welcome To the Best Test Of Nadiad</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate maxime quisquam ea, eveniet natus laudantium aliquid praesentium. Deserunt obcaecati voluptatem, facere libero eos unde blanditiis asperiores quia labore alias voluptatibus dolores aspernatur totam cum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, laborum aliquid quaerat totam aspernatur quod vitae quis voluptatibus. Corrupti id ex obcaecati culpa. Facilis, aut placeat. Odit, dolor ullam omnis atque sequi harum beatae!</p>
+        <button id="btn">Order Now</button>
+    </section>
+    <section class="products">
+        <h1 class="h-primary center">
+            Our Products
+        </h1>
+        <div id="pro">
+            <div class="box">
+              <img src="kajukatri.JPG" alt="kajukatri"> 
+              <h2 class="h-secondary center">
+                  Food Ordering
+              </h2>
+              <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam quo mollitia aspernatur eligendi quis corrupti maxime sunt delectus cum, vitae quidem, animi consequatur ut nulla numquam nemo. Fugiat soluta, optio cum maiores nemo deleniti.</p>
+            </div>
+
+        </div>
+    </section>
+</body> 
+</html>

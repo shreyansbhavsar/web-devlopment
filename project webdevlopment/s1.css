@@ -1,0 +1,16 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0ox;
+}
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+}
