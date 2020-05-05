@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script setTimeout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        time is now 
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log(9950);
+
+
+        // set Timeout ----> Allowa us to run the function once after the interval of time 
+        // clearTimeout------>Allows us to run the function repeatedly after the interval of time 
+
+        function shrey(name){
+            console.log('Hello World'+name);
+        }
+        // shrey()
+
+        // timeout=setTimeout(shrey, 2000,'shrey');
+        // console.log(timeout);
+
+        intervalid=setInterval(shrey,1000,'shrey');
+        clearInterval(intervalid);
+
+
+
+
+
+
+        // function displaytime(){
+            // time=new Date();
+            // console.log(time);
+            // document.getElementById('time').innerHTML=time;
+        // }
+        // setInterval(displaytime,1000)
+
+        // clearTimeout(timeout);
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Dates</title>
+    <style>
+        .container{
+            background-color: grey;
+            border: 2px solid black;
+            font-size: 40px;
+            padding: 34px;
+            margin: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is date and time tutorial');
+        let now=new Date();
+        console.log(now);
+
+        // let dt=new Date(0);
+        // console.log(dt);
+
+        // let bestd = new Date(year,month,Date,hours,minutes,second,milliseconds);
+        // let bestd=new Date(2020-04-10);
+        // console.log(bestd);
+
+
+        // let bestd = new Date(2030,4,6,9,3,2,34);
+        // console.log(bestd); 
+
+        let y=now.getFullYear();
+        console.log(y);
+        let d=now.getDate();
+        console.log(d);
+        let h =now.getHours();
+        console.log(h);
+        let m =now.getMinutes();
+        console.log(m);
+        let s=now.getSeconds();
+        console.log(s);
+
+
+        now.setDate(15);
+        console.log(now);
+        setInterval(utime,1000);
+        function utime
+        (){
+            time.innerHTML =new Date();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Event</title>
+    <style>
+        #btn{
+            padding:10px 14px;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            background-color:tomato;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Event: -->
+    <!-- Click -->
+    <!-- Contexemenu -->
+    <!-- Mouseover/mouseout -->
+    <!-- mousedown/mouseup -->
+    <!-- mousemove -->
+
+
+
+    <!-- form submit -->
+    <!-- focus -->
+
+
+
+    <!-- DDmcontentLoaded -->
+
+    <!-- transitionend -->
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit tempora, corrupti ducimus facere similique quo molestiae aperiam. Sint harum quisquam cum vero, dolorum non esse doloribus quidem ex nisi ut excepturi enim in animi aperiam consequuntur illum ratione repellat! Error excepturi tempora quae at dolorem, voluptate consequuntur mollitia numquam nobis inventore magni, architecto beatae praesentium itaque soluta nostrum hic repellendus quidem sed consequatur nisi? Unde veritatis esse delectus nemo voluptates voluptatem a, facere soluta voluptatum similique sequi repellat ipsum! Doloremque asperiores labore reiciendis. Quidem accusamus ipsam quos deleniti quisquam ea possimus quia, soluta dicta rem blanditiis debitis in libero dignissimos ut aut atque expedita natus eaque. Recusandae eum earum accusamus fugit inventore quidem ab perspiciatis aliquam velit quibusdam molestias asperiores, eligendi quam libero consectetur, ducimus dolor quasi voluptas facere minima. Quasi sequi est, eius voluptatem, eaque, animi officiis quos voluptate commodi eos sapiente harum ipsam consequuntur recusandae amet odio modi deserunt? Animi optio quaerat adipisci, iusto sit nesciunt ipsa corporis labore sint quidem, fuga dolorum? Illo unde illum molestiae porro non? Architecto placeat, explicabo doloribus ullam vitae praesentium iste consequatur quod. Ullam rerum neque suscipit distinctio! Quas dignissimos ducimus iusto dicta possimus labore quisquam neque porro similique culpa amet debitis pariatur itaque corrupti at odit officia, rerum alias, praesentium laborum, nobis est! Beatae maiores unde perferendis nihil quis necessitatibus tenetur sequi ipsam impedit, quas repudiandae praesentium doloribus ipsum? Exercitationem unde quis iure voluptatem officia, sed, ut mollitia, tempore distinctio delectus quos et porro nulla deserunt esse! Saepe excepturi provident, enim ipsam voluptatem sed rem autem, quam qui ut molestiae atque esse hic. Rem quidem adipisci mollitia est nihil sunt accusamus in necessitatibus. Blanditiis nemo, eligendi voluptates recusandae commodi maiores neque, optio culpa autem ratione corporis beatae, voluptatem ut error explicabo suscipit repellat ipsam doloribus. Deserunt facere modi molestiae minus sint at vitae reprehenderit, quaerat nisi dicta doloremque porro corrupti harum ipsa molestias fuga, temporibus autem ea id possimus consectetur similique quos! Debitis dolorem impedit nam, cum ipsam incidunt fugiat sint placeat magnam, error veritatis ut, deleniti molestias? Veritatis illum ea, nostrum atque repellendus, dolorum cum, dicta neque excepturi perspiciatis provident ducimus dolores? Debitis iure hic molestias quidem sunt delectus non fugiat omnis dicta quae. Quo ut hic nostrum exercitationem necessitatibus deserunt totam facilis neque reprehenderit repellat tempore, placeat asperiores rerum earum, ratione quidem, quae odio esse reiciendis. Excepturi itaque reprehenderit libero expedita nam fugit quaerat perspiciatis dolorum, animi, saepe voluptatum vel non numquam veritatis deleniti. Aliquam totam optio voluptates voluptatibus quos laboriosam ad labore magni, temporibus id ullam sunt quae minima voluptate odit, assumenda enim eos sint repellendus aut, autem iusto facere fuga! Voluptatem ipsa aliquid ut, fuga officia mollitia autem odio neque sunt? Ipsam blanditiis tenetur aperiam illo eum, voluptatum natus veniam, vitae modi, nesciunt nostrum ut necessitatibus. Inventore sint, unde dolores alias magnam tempore sunt! Inventore provident voluptate praesentium exercitationem quaerat minima incidunt reprehenderit omnis sequi dicta saepe ad vero tenetur vitae libero, tempora perspiciatis a voluptas corporis quod non. Provident, doloribus incidunt consequatur vitae fugit similique ducimus?</p>
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('Mouse inside');
+        });
+        // para.addEventListener('mouseout',function run(){
+            // alert('Mouse outside');
+        // });
+        
+        function hide()
+        {
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display !='none')
+            {
+                 para.style.display ='none';
+            }
+            else
+            {
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Dom</title>
+    <!-- Dom=Document Object Model -->
+
+</head>
+<body>
+            <div id="q1" class="con">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us </li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                    <li>More About Us</li>
+                </ul>
+            </div>
+            <div class="con">
+                This is another container
+            </div>
+    <script>
+        // let main=document. getElementById('q1');
+        // console.log(main);
+        // let c=document.getElementsByClassName('con');
+        // console.log(c);
+        // let sel=document.querySelector('.con');
+        // console.log(sel);
+        // let s1=document.querySelector('#q1>ul>li');
+        // console.log(s1); 
+        let s1=document.querySelectorAll('#q1>ul>li');
+        console.log(s1); 
+    </script>
+</body>
+</html>

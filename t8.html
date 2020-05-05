@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>SHREYANS'S</h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div> <input type="text"name="myname" id="name"></div><br>
+        <label for="rol">ROL</label>
+        <div> <input type="text"name="myrol"id="rol"></div><br>
+        <label for="email">Email</label>
+        <div><input type="email" name="myemail" id="email"></div><br>
+        <label for="birthdate">birthdate</label>
+        <div><input type="date" name="mybirthdate" id="birthdate"></div><br>
+        <label for="phone">phone</label>
+        <div><input type="number" name="mynumber" id="phone"></div><br>
+        <label for="aligible">Are uh aligible</label>
+        <div><input type="checkbox" name="myeligiblity" id="aligible"></div><br>
+               
+        
+        <div> gender: <label for="G">Male</label>
+            <input type="radio" name="mygender" id="G"> <label for="ge">Female</label> <input type="radio" name="mygender" id="ge"> <label for="gen">Other</label> <input type="radio" name="mygender" id="gen"></div><br>
+        <label for="area">write about yourself </label>
+        <div><br><textarea name="mytext" id="area" cols="30" rows="10" ></textarea></div><br>
+        <div>
+            <label for="car">car</label>
+            <select name="mycar" id="car">
+                <option value="inova"selected>inova</option>
+                <option value="BMW">BMW</option>
+            </select>
+        </div><br>
+        <div><input type="submit" value="submit Now"></div>
+        <div><input type="reset" value="reset Now"></div>
+    </form>
+</body>
+</html>

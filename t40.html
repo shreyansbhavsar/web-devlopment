@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Tutorial</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 100px 100px; */
+            /* grid-template-columns: 300px 100px auto; */
+            /* grid-template-columns: 300px auto 100px; */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* coloum aapva mate  */
+            /* grid-template-columns: repeat(10,auto); */
+            /* grap aapva mate use thay che ok  */
+            grid-gap: 2rem;
+
+        }
+        .iem{
+             background-color: chartreuse;
+            border: 2px solid tomato;
+            margin: 3px;
+            padding: 15px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iem">This is Item1</div>
+        <div class="iem">This is Item2</div>
+        <div class="iem">This is Item3</div>
+        <div class="iem">This is Item4</div>
+        <div class="iem">This is Item5</div>
+        <div class="iem">This is Item6</div>
+        <div class="iem">This is Item7</div>
+        <div class="iem">This is Item8</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+        <div class="iem">This is Item9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background: skyblue;
+            /* box-shadow: offset-x offset-y colour; */
+            /* box-shadow: offset-x offset-y blur-radius  colour; */
+            /* box-shadow: offset-x offset-y blur radius spread radius  colour; */
+
+            
+
+
+
+
+
+
+
+            /* box-shadow: 10px 13px greenyellow; */
+            /* box-shadow:-10px -13px greenyellow; */
+            /* box-shadow:10px 13px 10px greenyellow; */
+            /* box-shadow: -10px -13px 10px greenyellow; */
+            /* box-shadow: 10px 13px 10px 14px greenyellow;  */
+
+
+            /* blur karva mate ok ; */
+            /* box-shadow: -7px -5px 10px 34px rgba(22, 211, 186, 0.5); */
+            /* under ni taraf shado karav */
+            /* box-shadow: inset 3px 5px greenyellow; */
+
+
+
+
+
+
+            /* multiple shado  */
+            box-shadow: 3px 5px greenyellow ,10px 13px tomato;
+        }
+        .card{
+            text-shadow:3px 4px 5px tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+           <h2>card1</h2> 
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem quis excepturi ullam similique facere fugiat, veritatis quod velit laborum sed necessitatibus est debitis temporibus. Inventore fugiat dolorem ut recusandae sunt?'</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut provident recusandae vitae quis fuga sit corporis obcaecati iure dolores, quae tempora quia. Odio consequatur recusandae sequi nihil reprehenderit consectetur vitae.
+            </p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ex ea tenetur obcaecati quos dolore optio maiores repellat perferendis sunt quis minima magni exercitationem, explicabo quo perspiciatis minus autem amet!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

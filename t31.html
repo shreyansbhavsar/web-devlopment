@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: tomato;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* div pachi tarat j  */
+        div > p{
+            color: yellow;
+            background-color:green;
+            font-weight: bold;
+        }
+        /* div aagal wala par ok */
+        div + p{
+            color: white;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    this is a shreyans 
+                </li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+</html>

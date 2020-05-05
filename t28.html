@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* initialize the container as a flex box  */
+            display: flex;
+            /* flex properties for flex container (defalt is row) */
+            flex-direction: row;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+                /* nanu karvu hoi ti b thay so wrap   */
+            /* flex-flow: row-reverse wrap; */
+            /* justify-content: center; */
+            /* equallyspace aapva every content na vachhe  */
+            /* justify-content: space-between; */
+            /*bachhe j space aave aagal b and pachad b ok  */
+            /* justify-content: space-evenly; */
+            /* start and end ma ochu aave pan vachhe vadhare ok */
+            /* justify-content: space-around; */
+            /* vertically center kare  */
+            /* align-items: center; */
+            /* end ma vertically set kare end  */
+            /* align-items: flex-end; */
+            /* first kare ok set  */
+            /* align-items: flex-start; */
+            /* this is stretch kam nu j che bcz mobaile and all dipsplauy so  */
+            align-items: stretch;
+
+        }
+        .item{
+                width: 200px;
+                height: 200px;
+                background-color: tomato;
+                border: 2px solid black;           
+                padding: 3px;
+                margin: 10px;
+
+                flex-flow: column-reverse;
+        }
+        #item1{
+            /* flex properties for a flex item  */
+            /* order jeno moto ae last jay ok  */
+            /* order: 2; */
+            /* vadhare width thay as a display par flex grow  */
+            /* flex-grow: 3; */
+            /* display parmane nanu thay as compare ok value ok flex shirink */
+            /* flex-shrink: 3; */
+        }
+        #item2{
+            /* aani width nani moti control kari sakay  */
+            /* flex-basis: 120px; */
+            /* when flex direction is set to row flex basis will control width  */
+             /* when flex direction is set to colom flex basis will control hight  */
+            
+        }
+        #item3{
+            /*  flex:grow shirnk basis;  */
+            /* flex: 2 2 344px;  */
+            /* set the box ok  */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+            /* align-self: flex-start; */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">SecondBox</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Four Box</div>  -->
+        <!-- <div class="item" id="item5">Five Box</div> -->
+        <!-- <div class="item" id="item6">Six Box</div> -->
+    </div>
+</body>
